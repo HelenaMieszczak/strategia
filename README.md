@@ -7,7 +7,7 @@ Mini project created during **CODE:ME** Python class.
 * OOP
 * unittests
 
-### Tchnologies
+### Technologies
 Python 3.7
 
 
