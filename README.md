@@ -5,7 +5,7 @@ Mini project created during **CODE:ME** Python class.
 
 ### Raised topics
 * OOP
-* uniitests
+* unittests
 
 ### Tchnologies
 Python 3.7
