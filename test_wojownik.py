@@ -3,6 +3,7 @@ from wojownik import Wojownik, WojownikBlad
 from jednostki.rycerz import Rycerz
 from druzyna import Druzyna
 
+
 class WojownikTestCase(unittest.TestCase):
     def test_warrior_with_correct_life(self):
         w = Wojownik(30)
@@ -14,9 +15,10 @@ class WojownikTestCase(unittest.TestCase):
 
     def test_repr(self):
         w = Wojownik(10)
-        expected = '''HP =  10 EXP =  0'''
+        expected = '''\nWojownik: 
+HP =  10 
+EXP =  0'''
         received = w.__repr__()
-
         self.assertEqual(expected, received)
 
     def test_marsz(self):
@@ -33,8 +35,9 @@ class TestRycerz(unittest.TestCase):
 
     def test_stworzenie_udane(self):
         r = Rycerz()
-        self.assertEqual(r.zycie, 60)
+        self.assertEqual(r.zycie, 10)
         self.assertEqual(r.doswiadczenie, 0)
+
 
 class TestDruzyna(unittest.TestCase):
     def test_stworzenie(self):
@@ -46,6 +49,7 @@ class TestDruzyna(unittest.TestCase):
         r1 = Rycerz()
         d.dodaj_wojownika(r1)
         self.assertEqual(d.wojownicy, [r1])
+
 
 
 if __name__ == '__main__':

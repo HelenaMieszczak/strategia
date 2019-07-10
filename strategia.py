@@ -12,7 +12,7 @@ def main():
 
     luc = Lucznik()
     print(luc)
-    luc.atakuj(15)
+    luc.atakuj()
     print(luc)
 
 

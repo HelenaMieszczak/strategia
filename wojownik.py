@@ -11,7 +11,6 @@ class Wojownik:
         if zycie < 0:
             raise WojownikBlad
 
-
     def __repr__(self):
         nazwa = self.__class__.__name__
         return f"\n{nazwa}: \nHP =  {self.zycie} \nEXP =  {self.doswiadczenie}"
